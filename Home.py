@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
 html_7 = """
-   body: white;
+   stype="body: white;"
    """
 
 st.header("โปรเจคการจำแนกคุณภาพไวน์ขาว")
