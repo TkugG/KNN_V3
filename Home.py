@@ -4,8 +4,6 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
    st.header("โปรเจคการจำแนกไวน์ขาว")
-   #st.image("./img/kairung022.jpg")
-   col1, col2, col3 = st.columns(3)
 
    html_7 = """
    <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
