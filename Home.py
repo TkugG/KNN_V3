@@ -11,7 +11,6 @@ st.header("โปรเจคการจำแนกคุณภาพไวน
 html_7 = """
    <div style="background: linear-gradient(135deg, #2C3E50, #4CA1AF); padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 20px;">
     <h2 style="color: white; margin: 0;">🥂 โปรเจคการจำแนกคุณภาพไวน์ขาว</h2>
-    <p style="color: #E0F7FA; margin: 5px 0 0 0; font-size: 15px;">ระบบทำนายระดับคุณภาพไวน์ด้วยอัลกอริทึม K-Nearest Neighbors (KNN)</p>
 </div>
    """
 st.markdown(html_7, unsafe_allow_html=True)
