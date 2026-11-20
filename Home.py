@@ -3,6 +3,10 @@ import pandas as pd
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
+html_7 = """
+   body: white;
+   """
+
 st.header("โปรเจคการจำแนกคุณภาพไวน์ขาว")
 html_7 = """
    <div style="background-color:grey;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
