@@ -36,7 +36,7 @@ else:
 
 html_8 = """
    <div style="background: linear-gradient(90deg, #129df3, #121df3); padding: 12px; border-radius: 10px; text-align: center; margin-bottom: 15px;">
-    <h5 style="color: #1E272E; margin: 0; font-weight: bold;">🤓☝️ สถิติข้อมูลไวน์ขาว</h5>
+    <h5 style="color: white; margin: 0; font-weight: bold;">🤓☝️ สถิติข้อมูลไวน์ขาว</h5>
 </div>
    """
 st.markdown(html_8, unsafe_allow_html=True)
