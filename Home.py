@@ -75,7 +75,7 @@ if st.button("ทำนายผล"):
             <p style="color: #1E8449; margin: 5px 0 0 0;">สัดส่วนสารเคมีอยู่ในเกณฑ์ไวน์คุณภาพสูง (คะแนนประเมิน ≥ 7)</p>
         </div>
         """, unsafe_allow_html=True)
-      st.image("./img/winew.png")
+      st.image("./img/whii.png")
    else:
       st.markdown("""
         <div style="background-color: #EBF5FB; border-left: 6px solid #2980B9; padding: 20px; border-radius: 10px; margin-top: 15px;">
@@ -83,6 +83,6 @@ if st.button("ทำนายผล"):
             <p style="color: #21618C; margin: 5px 0 0 0;">สัดส่วนสารเคมีอยู่ในเกณฑ์มาตรฐานทั่วไป (คะแนนประเมิน < 7)</p>
         </div>
         """, unsafe_allow_html=True)
-      st.image("./img/wine.png")
+      st.image("./img/whidi.png")
 else:
     st.write("ไม่ทำนาย")
