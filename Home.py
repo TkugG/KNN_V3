@@ -3,6 +3,17 @@ import pandas as pd
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 html_7 = """
    stype="body: white;"
    """
