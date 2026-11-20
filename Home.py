@@ -35,9 +35,9 @@ else:
    st.write("ไม่แสดงข้อมูล")
 
 html_8 = """
-   <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-   <center><h5>ทำนายข้อมูล</h5></center>
-   </div>
+   <div style="background: linear-gradient(90deg, #F39C12, #F1C40F); padding: 12px; border-radius: 10px; text-align: center; margin-bottom: 15px;">
+    <h5 style="color: #1E272E; margin: 0; font-weight: bold;">🤓☝️ สถิติข้อมูลไวน์ขาว</h5>
+</div>
    """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
@@ -59,10 +59,20 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 1:
-      st.success("ไวน์คุณภาพดี")
+      st.markdown("""
+        <div style="background-color: #D4EFDF; border-left: 6px solid #27AE60; padding: 20px; border-radius: 10px; margin-top: 15px;">
+            <h4 style="color: #145A32; margin: 0;">🏆 ผลการทำนาย: ไวน์คุณภาพดี (พรีเมียม)</h4>
+            <p style="color: #1E8449; margin: 5px 0 0 0;">สัดส่วนสารเคมีอยู่ในเกณฑ์ไวน์คุณภาพสูง (คะแนนประเมิน ≥ 7)</p>
+        </div>
+        """, unsafe_allow_html=True)
       st.image("./img/winew.png")
    else:
-      st.success("ไวน์ทั่วไป")
+      st.markdown("""
+        <div style="background-color: #EBF5FB; border-left: 6px solid #2980B9; padding: 20px; border-radius: 10px; margin-top: 15px;">
+            <h4 style="color: #1B4F72; margin: 0;">🍷 ผลการทำนาย: ไวน์คุณภาพทั่วไป</h4>
+            <p style="color: #21618C; margin: 5px 0 0 0;">สัดส่วนสารเคมีอยู่ในเกณฑ์มาตรฐานทั่วไป (คะแนนประเมิน < 7)</p>
+        </div>
+        """, unsafe_allow_html=True)
       st.image("./img/wine.png")
 else:
     st.write("ไม่ทำนาย")
