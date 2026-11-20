@@ -47,7 +47,7 @@ if st.button("ทำนายผล"):
       #st.write("ทำนาย")
       #dt = pd.read_csv("./data/iris.csv") 
 
-   X = dt('alcohol','residualsugar','pH','volatileacidity' axis=1)
+   X = dt[('alcohol','residualsugar','pH','volatileacidity' axis=1)]
    y = (dt['quality'] >= 7).atypes(int)
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
