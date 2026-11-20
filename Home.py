@@ -9,9 +9,10 @@ html_7 = """
 
 st.header("โปรเจคการจำแนกคุณภาพไวน์ขาว")
 html_7 = """
-   <div style="background-color:grey;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-   <center><h5>สถิติข้อมูลไวน์ขาว</h5></center>
-   </div>
+   <div style="background: linear-gradient(135deg, #2C3E50, #4CA1AF); padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 20px;">
+    <h2 style="color: white; margin: 0;">🥂 โปรเจคการจำแนกคุณภาพไวน์ขาว</h2>
+    <p style="color: #E0F7FA; margin: 5px 0 0 0; font-size: 15px;">ระบบทำนายระดับคุณภาพไวน์ด้วยอัลกอริทึม K-Nearest Neighbors (KNN)</p>
+</div>
    """
 st.markdown(html_7, unsafe_allow_html=True)
 st.markdown("")
