@@ -50,8 +50,6 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)  
 
    x_input = np.array([[alcohol,residualsugar,pH,volatileacidity]]) #ข้อมูลใหม่สำหรับทำนาย
-   x_input = np.array([[alcohol,sugar,ph,acidity]])
-
    st.write(Knn_model.predict(x_input))   
    out=Knn_model.predict(x_input)
 
