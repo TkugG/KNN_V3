@@ -54,6 +54,6 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
 if out[0] == 1:
-      st.success("ไวน์คุณภาพดี")
-   else:
-      st.success("ไวน์ทั่วไป")
+   st.success("ไวน์คุณภาพดี")
+else:
+   st.success("ไวน์ทั่วไป")
