@@ -3,8 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
-   st.header("โปรเจคการจำแนกไวน์ขาว")
-
+   st.header("โปรเจคการจำแนกคุณภาพไวน์ขาว")
    html_7 = """
    <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
    <center><h5>สถิติข้อมูลไวน์ขาว</h5></center>
@@ -12,7 +11,6 @@ from sklearn.neighbors import KNeighborsClassifier
    """
    st.markdown(html_7, unsafe_allow_html=True)
    st.markdown("")
-
 
    dt = pd.read_csv("./data/winequality-white.csv", sep=';')
    st.write(dt.head(10))
@@ -30,7 +28,7 @@ from sklearn.neighbors import KNeighborsClassifier
       st.bar_chart(dx2)
       st.button("ไม่แสดงข้อมูล")
    else:
-      st.write("ไม่แสดงข้อมูล")
+         st.write("ไม่แสดงข้อมูล")
 
    html_8 = """
    <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
@@ -60,7 +58,7 @@ from sklearn.neighbors import KNeighborsClassifier
       st.write(Knn_model.predict(x_input))   
       out=Knn_model.predict(x_input)
 
-      if out[0] == 'Setosa':
+      if out[0] == '1':
          st.success("ไวน์คุณภาพดี")
-   else:
-      st.success("ไวน์ทั่วไป")
+      else:
+         st.success("ไวน์ทั่วไป")
