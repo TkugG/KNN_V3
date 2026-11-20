@@ -50,12 +50,14 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)  
 
    x_input = np.array([[alcohol, sugar, ph, acidity]])
-   st.write(Knn_model.predict(x_input))   
+   st.write(Knn_model.predict(x_input)) 
    out=Knn_model.predict(x_input)
 
    if out[0] == 1:
       st.success("ไวน์คุณภาพดี")
+      st.image("./img/winew.png")
    else:
       st.success("ไวน์ทั่วไป")
+      st.image("./img/wine.png")
 else:
     st.write("ไม่ทำนาย")
