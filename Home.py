@@ -43,10 +43,7 @@ sugar = st.slider("น้ำตาลคงเหลือ (residualsugar)", 0.6
 ph = st.number_input("ค่าความเป็นกรด-ด่าง (pH)", 2.7, 3.8, 3.2)
 acidity = st.number_input("ค่ากรดระเหย (volatileacidity)", 0.08, 1.1, 0.26)
 
-if st.button("ทำนายผล"):
-      #st.write("ทำนาย")
-      #dt = pd.read_csv("./data/iris.csv") 
-
+if st.button("ทำนายผล"): 
    X = dt[('alcohol','residualsugar','pH','volatileacidity' axis=1)]
    y = (dt['quality'] >= 7).atypes(int)
 
