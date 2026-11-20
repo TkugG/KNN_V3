@@ -44,7 +44,7 @@ ph = st.number_input("ค่าความเป็นกรด-ด่าง (p
 acidity = st.number_input("ค่ากรดระเหย (volatileacidity)", 0.08, 1.1, 0.26)
 
 if st.button("ทำนายผล"): 
-   X = dt[('alcohol','residualsugar','pH','volatileacidity' axis=1)]
+   X = dt[['alcohol', 'residualsugar', 'pH', 'volatileacidity']]
    y = (dt['quality'] >= 7).atypes(int)
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
