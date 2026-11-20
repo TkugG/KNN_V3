@@ -4,21 +4,21 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
 st.header("โปรเจคการจำแนกคุณภาพไวน์ขาว")
-   html_7 = """
+html_7 = """
    <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
    <center><h5>สถิติข้อมูลไวน์ขาว</h5></center>
    </div>
    """
-   st.markdown(html_7, unsafe_allow_html=True)
-   st.markdown("")
+st.markdown(html_7, unsafe_allow_html=True)
+st.markdown("")
 
-   dt = pd.read_csv("./data/winequality-white.csv", sep=';')
-   st.write(dt.head(10))
+dt = pd.read_csv("./data/winequality-white.csv", sep=';')
+st.write(dt.head(10))
 
-   dt1 = dt['alcohol'].sum()
-   dt2 = dt['residualsugar'].sum()
-   dt3 = dt['pH'].sum()
-   dt4 = dt['volatileacidity'].sum()
+dt1 = dt['alcohol'].sum()
+dt2 = dt['residualsugar'].sum()
+dt3 = dt['pH'].sum()
+dt4 = dt['volatileacidity'].sum()
 
    dx = [dt1, dt2, dt3, dt4]
    dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4"])
