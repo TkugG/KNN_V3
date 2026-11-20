@@ -29,7 +29,7 @@ if st.button("แสดงการจินตทัศน์ข้อมูล
 else:
    st.write("ไม่แสดงข้อมูล")
 
-   html_8 = """
+html_8 = """
    <div style="background-color:#6BD5DA;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
    <center><h5>ทำนายข้อมูล</h5></center>
    </div>
@@ -44,7 +44,7 @@ acidity = st.number_input("ค่ากรดระเหย (volatileacidity)",
 
 if st.button("ทำนายผล"): 
    X = dt[['alcohol', 'residualsugar', 'pH', 'volatileacidity']]
-   y = (dt['quality'] >= 7).atypes(int)
+   y = (dt['quality'] >= 7).astype(int)
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)  
@@ -54,7 +54,7 @@ if st.button("ทำนายผล"):
    st.write(Knn_model.predict(x_input))   
    out=Knn_model.predict(x_input)
 
-if out[0] == '1':
+if out[0] == 1:
    st.success("ไวน์คุณภาพดี")
 else:
    st.success("ไวน์ทั่วไป")
