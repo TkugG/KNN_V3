@@ -66,7 +66,6 @@ if st.button("ทำนายผล"):
         </div>
         """, unsafe_allow_html=True)
       st.image("./img/winew.png")
-      img_rotated = img.rotate(-90, expand=True)
    else:
       st.markdown("""
         <div style="background-color: #EBF5FB; border-left: 6px solid #2980B9; padding: 20px; border-radius: 10px; margin-top: 15px;">
